@@ -15,6 +15,7 @@
 		E133AA7C1D5C457B00D9031A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E133AA7A1D5C457B00D9031A /* LaunchScreen.storyboard */; };
 		E133AA871D5C457B00D9031A /* WebViewLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA861D5C457B00D9031A /* WebViewLearnTests.m */; };
 		E133AA921D5C457B00D9031A /* WebViewLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA911D5C457B00D9031A /* WebViewLearnUITests.m */; };
+		E1E40F8D1D5C476F0022EBEC /* NewWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E40F8C1D5C476F0022EBEC /* NewWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E133AA8D1D5C457B00D9031A /* WebViewLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E133AA911D5C457B00D9031A /* WebViewLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewLearnUITests.m; sourceTree = "<group>"; };
 		E133AA931D5C457B00D9031A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E40F8B1D5C476F0022EBEC /* NewWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWebView.h; sourceTree = "<group>"; };
+		E1E40F8C1D5C476F0022EBEC /* NewWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				E133AA7A1D5C457B00D9031A /* LaunchScreen.storyboard */,
 				E133AA7D1D5C457B00D9031A /* Info.plist */,
 				E133AA6C1D5C457B00D9031A /* Supporting Files */,
+				E1E40F8B1D5C476F0022EBEC /* NewWebView.h */,
+				E1E40F8C1D5C476F0022EBEC /* NewWebView.m */,
 			);
 			path = WebViewLearn;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					E133AA681D5C457B00D9031A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5HLAZYARTZ;
 					};
 					E133AA811D5C457B00D9031A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -272,6 +278,7 @@
 			files = (
 				E133AA741D5C457B00D9031A /* ViewController.m in Sources */,
 				E133AA711D5C457B00D9031A /* AppDelegate.m in Sources */,
+				E1E40F8D1D5C476F0022EBEC /* NewWebView.m in Sources */,
 				E133AA6E1D5C457B00D9031A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WebViewLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoshi.WebViewLearn;
@@ -424,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WebViewLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoshi.WebViewLearn;
@@ -496,6 +505,7 @@
 				E133AA981D5C457B00D9031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E133AA991D5C457B00D9031A /* Build configuration list for PBXNativeTarget "WebViewLearnTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				E133AA9B1D5C457B00D9031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E133AA9C1D5C457B00D9031A /* Build configuration list for PBXNativeTarget "WebViewLearnUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +523,7 @@
 				E133AA9E1D5C457B00D9031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
