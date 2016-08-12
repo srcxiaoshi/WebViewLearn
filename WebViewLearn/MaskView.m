@@ -40,7 +40,7 @@
 
     //取得当前位置
     CGPoint nowPoint=[touch locationInView:self];
-    NSLog(@"");
+    NSLog(@"当前点=%f,%f",nowPoint.x,nowPoint.y);
     //移动逻辑
     if (self.isInWeb)
     {
