@@ -7,6 +7,7 @@
 //
 
 #import "NewWebView.h"
+//#import "UIScrollView+UITouch.h"
 
 @implementation NewWebView
 
@@ -18,19 +19,24 @@
     self.bottomView=[[UIView alloc]initWithFrame:CGRectMake(frame.origin.x, frame.origin.y+frame.size.height, frame.size.width, frame.size.height/2)];
     [self addSubview:self.bottomView];
     self.scrollView.delegate=self;
+    self.isEnd=NO;
     return self;
 }
 
 #pragma mark newWebView.ScrollView UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"滑动了\n");
-    NSLog(@"%f,%f\n",scrollView.contentOffset.y,scrollView.contentSize.height);
+    
+    //NSLog(@"height=%f\n",scrollView.contentSize.height);
     if (-scrollView.contentOffset.y+scrollView.contentSize.height<=self.frame.size.height) {
-        NSLog(@"到头了\n");
+        self.isEnd=YES;
+        //NSLog(@"到头了\n");
+    }
+    else
+    {
+        self.isEnd=NO;
     }
 }
-
 
 
 @end

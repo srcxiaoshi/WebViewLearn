@@ -11,14 +11,24 @@
 
 @protocol UIScrollViewFromWebViewDelegate <NSObject>
 
-- (void)WebScrollViewDidScroll:(UIScrollView *)scrollView;
+- (void)WebScrollViewDidScroll:(CGPoint )begin WithEnd:(CGPoint )end;
 
 @end
 
-@interface NewWebView : UIWebView <UIScrollViewDelegate>
+
+
+
+
+@interface NewWebView : UIWebView <UIScrollViewDelegate,UIGestureRecognizerDelegate>
 
 @property(nonatomic,strong)UIView *bottomView;
 
 @property(nonatomic,weak) id<UIScrollViewFromWebViewDelegate>  webScrollViewDelegate;
+
+@property(nonatomic,assign)CGPoint begin;
+
+@property(nonatomic,assign)CGPoint end;
+
+@property(nonatomic,assign)BOOL isEnd;
 
 @end

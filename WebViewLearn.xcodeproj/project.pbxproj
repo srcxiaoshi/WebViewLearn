@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1026C011D5D7FFC00C930AD /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1026C001D5D7FFC00C930AD /* MyScrollView.m */; };
+		E1026C041D5D823400C930AD /* backView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1026C031D5D823400C930AD /* backView.m */; };
+		E1026C061D5D967200C930AD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E1026C051D5D967200C930AD /* Default.png */; };
 		E133AA6E1D5C457B00D9031A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA6D1D5C457B00D9031A /* main.m */; };
 		E133AA711D5C457B00D9031A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA701D5C457B00D9031A /* AppDelegate.m */; };
 		E133AA741D5C457B00D9031A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA731D5C457B00D9031A /* ViewController.m */; };
@@ -15,7 +18,9 @@
 		E133AA7C1D5C457B00D9031A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E133AA7A1D5C457B00D9031A /* LaunchScreen.storyboard */; };
 		E133AA871D5C457B00D9031A /* WebViewLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA861D5C457B00D9031A /* WebViewLearnTests.m */; };
 		E133AA921D5C457B00D9031A /* WebViewLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA911D5C457B00D9031A /* WebViewLearnUITests.m */; };
+		E139953E1D5DB8140007F050 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = E139953D1D5DB8140007F050 /* MaskView.m */; };
 		E1E40F8D1D5C476F0022EBEC /* NewWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E40F8C1D5C476F0022EBEC /* NewWebView.m */; };
+		E1E40F961D5C71A70022EBEC /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E40F951D5C71A70022EBEC /* UIScrollView+UITouch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1026BFF1D5D7FFC00C930AD /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		E1026C001D5D7FFC00C930AD /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
+		E1026C021D5D823400C930AD /* backView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backView.h; sourceTree = "<group>"; };
+		E1026C031D5D823400C930AD /* backView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backView.m; sourceTree = "<group>"; };
+		E1026C051D5D967200C930AD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E133AA691D5C457B00D9031A /* WebViewLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E133AA6D1D5C457B00D9031A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E133AA6F1D5C457B00D9031A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +62,12 @@
 		E133AA8D1D5C457B00D9031A /* WebViewLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E133AA911D5C457B00D9031A /* WebViewLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewLearnUITests.m; sourceTree = "<group>"; };
 		E133AA931D5C457B00D9031A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E139953C1D5DB8140007F050 /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		E139953D1D5DB8140007F050 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
 		E1E40F8B1D5C476F0022EBEC /* NewWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWebView.h; sourceTree = "<group>"; };
 		E1E40F8C1D5C476F0022EBEC /* NewWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWebView.m; sourceTree = "<group>"; };
+		E1E40F941D5C71A70022EBEC /* UIScrollView+UITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouch.h"; sourceTree = "<group>"; };
+		E1E40F951D5C71A70022EBEC /* UIScrollView+UITouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouch.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +118,7 @@
 		E133AA6B1D5C457B00D9031A /* WebViewLearn */ = {
 			isa = PBXGroup;
 			children = (
+				E1026C051D5D967200C930AD /* Default.png */,
 				E133AA6F1D5C457B00D9031A /* AppDelegate.h */,
 				E133AA701D5C457B00D9031A /* AppDelegate.m */,
 				E133AA721D5C457B00D9031A /* ViewController.h */,
@@ -115,6 +130,14 @@
 				E133AA6C1D5C457B00D9031A /* Supporting Files */,
 				E1E40F8B1D5C476F0022EBEC /* NewWebView.h */,
 				E1E40F8C1D5C476F0022EBEC /* NewWebView.m */,
+				E1E40F941D5C71A70022EBEC /* UIScrollView+UITouch.h */,
+				E1E40F951D5C71A70022EBEC /* UIScrollView+UITouch.m */,
+				E1026BFF1D5D7FFC00C930AD /* MyScrollView.h */,
+				E1026C001D5D7FFC00C930AD /* MyScrollView.m */,
+				E1026C021D5D823400C930AD /* backView.h */,
+				E1026C031D5D823400C930AD /* backView.m */,
+				E139953C1D5DB8140007F050 /* MaskView.h */,
+				E139953D1D5DB8140007F050 /* MaskView.m */,
 			);
 			path = WebViewLearn;
 			sourceTree = "<group>";
@@ -252,6 +275,7 @@
 				E133AA7C1D5C457B00D9031A /* LaunchScreen.storyboard in Resources */,
 				E133AA791D5C457B00D9031A /* Assets.xcassets in Resources */,
 				E133AA771D5C457B00D9031A /* Main.storyboard in Resources */,
+				E1026C061D5D967200C930AD /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E40F961D5C71A70022EBEC /* UIScrollView+UITouch.m in Sources */,
 				E133AA741D5C457B00D9031A /* ViewController.m in Sources */,
 				E133AA711D5C457B00D9031A /* AppDelegate.m in Sources */,
 				E1E40F8D1D5C476F0022EBEC /* NewWebView.m in Sources */,
+				E139953E1D5DB8140007F050 /* MaskView.m in Sources */,
 				E133AA6E1D5C457B00D9031A /* main.m in Sources */,
+				E1026C041D5D823400C930AD /* backView.m in Sources */,
+				E1026C011D5D7FFC00C930AD /* MyScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
