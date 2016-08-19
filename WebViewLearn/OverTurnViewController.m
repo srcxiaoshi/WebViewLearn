@@ -58,6 +58,7 @@
 //转屏
 -(void)zhuan
 {
+    self.webView.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
     //简单的动画效果
     [UIView animateWithDuration:2.0 animations:^{
         //全屏
@@ -71,7 +72,7 @@
         }
         else
         {
-            //self.webView.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
+/*            //self.webView.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
 //            float tx=0;
 //            float ty=0-self.webView.frame.size.height;
 //            //平移
@@ -92,6 +93,12 @@
 //            NSLog(@"---------%f,%f,%f,%f\n",self.webView.frame.origin.x,self.webView.frame.origin.y,self.webView.frame.size.width,self.webView.frame.size.height);
 //            self.webView.transform = t4;
             
+*/
+            
+            
+            
+/*
+            
             //使用系统转屏的实现，如下，测试没有问题
 //            //旋转动画
 //            [UIView animateWithDuration:[[UIApplication sharedApplication] statusBarOrientationAnimationDuration] animations:^{
@@ -102,16 +109,50 @@
 //                //[[UIApplication sharedApplication] setStatusBarHidden:NO];
 //                
 //            }];
+
+ */
+            
+            
+            
+            
+            
+            
+            
+            
+            //旋转,旋转的是弧度，绕（0,0）旋转
+            [self setAnchorPoint:CGPointMake(0,0) forView:self.webView];
+            CGAffineTransform t1 =CGAffineTransformMakeRotation(90*M_PI/180.0f);
+            CGAffineTransform t2=CGAffineTransformMakeTranslation(568,0);
+            t1=CGAffineTransformConcat(t1,t2);
+            self.webView.transform=t1;
+            
         }
     } completion:^(BOOL finished) {
         //
         NSLog(@"完成\n");
         NSLog(@"---------%f,%f,%f,%f\n",self.webView.frame.origin.x,self.webView.frame.origin.y,self.webView.frame.size.width,self.webView.frame.size.height);
+        [self setDefaultAnchorPointforView:self.webView];
     }];
     
     
     
 }
 
+- (void)setAnchorPoint:(CGPoint)anchorPoint forView:(UIView *)view
+{
+    CGPoint oldOrigin = view.frame.origin;
+    view.layer.anchorPoint = anchorPoint;
+    CGPoint newOrigin = view.frame.origin;
+    
+    CGPoint transition;
+    transition.x = newOrigin.x - oldOrigin.x;
+    transition.y = newOrigin.y - oldOrigin.y;
+    
+    view.center = CGPointMake (view.center.x - transition.x, view.center.y - transition.y);
+}
 
+- (void)setDefaultAnchorPointforView:(UIView *)view
+{
+    [self setAnchorPoint:CGPointMake(0.5f, 0.5f) forView:view];
+}
 @end

@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "OverTurnViewController.h"
 #import "ViewController.h"
-
+#import "AnotherViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    OverTurnViewController *vc=[[OverTurnViewController alloc]init];
+    //OverTurnViewController *vc=[[OverTurnViewController alloc]init];
     //ViewController *vc=[[ ViewController alloc]init];
+    AnotherViewController *vc=[[AnotherViewController alloc]init];
     self.window.rootViewController=vc;
     return YES;
 }

@@ -20,6 +20,10 @@
 		E133AA921D5C457B00D9031A /* WebViewLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E133AA911D5C457B00D9031A /* WebViewLearnUITests.m */; };
 		E139953E1D5DB8140007F050 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = E139953D1D5DB8140007F050 /* MaskView.m */; };
 		E13995461D5DE9220007F050 /* OverTurnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13995451D5DE9220007F050 /* OverTurnViewController.m */; };
+		E1B97AF11D66B72000B2A197 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B97AEE1D66B72000B2A197 /* GCDMulticastDelegate.m */; };
+		E1B97AF21D66B72000B2A197 /* MulticastDelegateBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B97AF01D66B72000B2A197 /* MulticastDelegateBaseObject.m */; };
+		E1C7D1391D630C190063FCDE /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C7D1381D630C190063FCDE /* AnotherViewController.m */; };
+		E1C7D13B1D630D830063FCDE /* heng.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1C7D13A1D630D830063FCDE /* heng.jpg */; };
 		E1E40F8D1D5C476F0022EBEC /* NewWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E40F8C1D5C476F0022EBEC /* NewWebView.m */; };
 		E1E40F961D5C71A70022EBEC /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E40F951D5C71A70022EBEC /* UIScrollView+UITouch.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +71,13 @@
 		E139953D1D5DB8140007F050 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
 		E13995441D5DE9220007F050 /* OverTurnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverTurnViewController.h; sourceTree = "<group>"; };
 		E13995451D5DE9220007F050 /* OverTurnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverTurnViewController.m; sourceTree = "<group>"; };
+		E1B97AED1D66B72000B2A197 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		E1B97AEE1D66B72000B2A197 /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		E1B97AEF1D66B72000B2A197 /* MulticastDelegateBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticastDelegateBaseObject.h; sourceTree = "<group>"; };
+		E1B97AF01D66B72000B2A197 /* MulticastDelegateBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticastDelegateBaseObject.m; sourceTree = "<group>"; };
+		E1C7D1371D630C190063FCDE /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
+		E1C7D1381D630C190063FCDE /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
+		E1C7D13A1D630D830063FCDE /* heng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heng.jpg; sourceTree = "<group>"; };
 		E1E40F8B1D5C476F0022EBEC /* NewWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWebView.h; sourceTree = "<group>"; };
 		E1E40F8C1D5C476F0022EBEC /* NewWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWebView.m; sourceTree = "<group>"; };
 		E1E40F941D5C71A70022EBEC /* UIScrollView+UITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouch.h"; sourceTree = "<group>"; };
@@ -121,6 +132,7 @@
 		E133AA6B1D5C457B00D9031A /* WebViewLearn */ = {
 			isa = PBXGroup;
 			children = (
+				E1B97AEC1D66B70400B2A197 /* GCDMulticastDelegate */,
 				E13995431D5DE8A30007F050 /* OVERTURN */,
 				E1026C051D5D967200C930AD /* Default.png */,
 				E133AA6F1D5C457B00D9031A /* AppDelegate.h */,
@@ -175,10 +187,24 @@
 		E13995431D5DE8A30007F050 /* OVERTURN */ = {
 			isa = PBXGroup;
 			children = (
+				E1C7D13A1D630D830063FCDE /* heng.jpg */,
 				E13995441D5DE9220007F050 /* OverTurnViewController.h */,
 				E13995451D5DE9220007F050 /* OverTurnViewController.m */,
+				E1C7D1371D630C190063FCDE /* AnotherViewController.h */,
+				E1C7D1381D630C190063FCDE /* AnotherViewController.m */,
 			);
 			name = OVERTURN;
+			sourceTree = "<group>";
+		};
+		E1B97AEC1D66B70400B2A197 /* GCDMulticastDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E1B97AED1D66B72000B2A197 /* GCDMulticastDelegate.h */,
+				E1B97AEE1D66B72000B2A197 /* GCDMulticastDelegate.m */,
+				E1B97AEF1D66B72000B2A197 /* MulticastDelegateBaseObject.h */,
+				E1B97AF01D66B72000B2A197 /* MulticastDelegateBaseObject.m */,
+			);
+			name = GCDMulticastDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E133AA7C1D5C457B00D9031A /* LaunchScreen.storyboard in Resources */,
+				E1C7D13B1D630D830063FCDE /* heng.jpg in Resources */,
 				E133AA791D5C457B00D9031A /* Assets.xcassets in Resources */,
 				E133AA771D5C457B00D9031A /* Main.storyboard in Resources */,
 				E1026C061D5D967200C930AD /* Default.png in Resources */,
@@ -315,10 +342,13 @@
 			files = (
 				E1E40F961D5C71A70022EBEC /* UIScrollView+UITouch.m in Sources */,
 				E133AA741D5C457B00D9031A /* ViewController.m in Sources */,
+				E1B97AF11D66B72000B2A197 /* GCDMulticastDelegate.m in Sources */,
 				E13995461D5DE9220007F050 /* OverTurnViewController.m in Sources */,
 				E133AA711D5C457B00D9031A /* AppDelegate.m in Sources */,
 				E1E40F8D1D5C476F0022EBEC /* NewWebView.m in Sources */,
 				E139953E1D5DB8140007F050 /* MaskView.m in Sources */,
+				E1B97AF21D66B72000B2A197 /* MulticastDelegateBaseObject.m in Sources */,
+				E1C7D1391D630C190063FCDE /* AnotherViewController.m in Sources */,
 				E133AA6E1D5C457B00D9031A /* main.m in Sources */,
 				E1026C041D5D823400C930AD /* backView.m in Sources */,
 				E1026C011D5D7FFC00C930AD /* MyScrollView.m in Sources */,
