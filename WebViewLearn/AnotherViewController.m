@@ -9,6 +9,31 @@
 #import "AnotherViewController.h"
 #import "AppDelegate.h"
 
+@interface EncodeClass : NSObject <NSCoding>
+@property(nonatomic,strong)NSString *name;
+@property(nonatomic,assign)int age;
+@end
+@implementation EncodeClass
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.name forKey:@"name"];
+    
+    [aCoder encodeInt:self.age forKey:@"age"];
+}
+
+-(id) initWithCoder:(NSCoder *) aDecoder
+{
+    self=[super init];
+    self.name=[aDecoder decodeObjectForKey:@"name"];
+    self.age=[aDecoder decodeIntForKey:@"age"];
+    return self;
+}
+
+@end
+
+
+
 @interface AnotherViewController()
 
 
@@ -43,6 +68,40 @@
     //appDelegate.myWindow.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
     NSLog(@"2 %f,%f,%f,%f\n",appDelegate.myWindow.frame.origin.x,appDelegate.myWindow.frame.origin.y
           ,appDelegate.myWindow.frame.size.width,appDelegate.myWindow.frame.size.height);
+    
+    
+    
+    //测试block
+//    NSMutableArray *arr=[[NSMutableArray alloc] init];
+//    [arr addObject:^{
+//        NSLog(@"nihao\n");
+//    }];
+//    typedef void (*NewType)();
+//    void (^bb)()=[arr objectAtIndex:0];
+//    bb();
+
+    //测试归档
+    EncodeClass *enClass=[EncodeClass new];
+    enClass.name=@"mingzi";
+    enClass.age=1;
+    //变成NSData
+    NSData *other;
+    other=[NSKeyedArchiver archivedDataWithRootObject:enClass];
+    [other writeToFile:@"/tmp/objandobj.txt" atomically:YES];
+    //从文件中读
+    NSData *fileData;
+    
+    fileData=[NSData dataWithContentsOfFile:@"/tmp/objandobj.txt"];
+    
+    EncodeClass *fromFile;
+    
+    fromFile=(EncodeClass *)[NSKeyedUnarchiver unarchiveObjectWithData:fileData];
+    
+    NSLog(@"------%@",fromFile);
+
+    
+    
+    
 }
 
 @end
